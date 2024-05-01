@@ -8,12 +8,12 @@ const shuffle = (array) => {
   }
 }
 
-function GameBoard( { characters }) {
+function GameBoard({ characters, onClick }) {
   shuffle(characters)
 
   return (
     <>
-      {characters.map(character => <div>{character}</div>)}
+      {characters.map(character => <div onClick={() => onClick(character)}>{character}</div>)}
     </>
   )
 }
