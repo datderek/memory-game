@@ -13,7 +13,7 @@ function GameBoard({ cards, onClick }) {
 
   return (
     <>
-      {cards.map(card => <div onClick={() => onClick(card)}>{card}</div>)}
+      {cards.map(card => <div onClick={() => onClick(card)}>{card.productName}</div>)}
     </>
   )
 }
