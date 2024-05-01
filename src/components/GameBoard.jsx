@@ -8,12 +8,12 @@ const shuffle = (array) => {
   }
 }
 
-function GameBoard({ cards, onClick }) {
+function GameBoard({ gameState, cards, onClick }) {
   shuffle(cards)
 
   return (
     <>
-      {cards.map(card => <div onClick={() => onClick(card)}>{card.productName}</div>)}
+      {cards.map(card => <div onClick={gameState === 'playing' && (() => onClick(card))}>{card.productName}</div>)}
     </>
   )
 }

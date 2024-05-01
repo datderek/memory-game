@@ -57,7 +57,7 @@ function App() {
   // Updates the cardBank once difficulty is set and data is fetched
   useEffect(() => {
     if (difficulty === 'easy') {
-      setCardBank([...fetchedData].slice(0, 5));
+      setCardBank([...fetchedData].slice(0, 6));
     } else if (difficulty === 'medium') {
       setCardBank([...fetchedData].slice(0, 10));
     } else {
