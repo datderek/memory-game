@@ -1,3 +1,6 @@
+import Card from './Card';
+import '../styles/GameBoard.css'
+
 const shuffle = (array) => {
   const len = array.length;
   for (let i = 0; i < len; i++) {
@@ -12,9 +15,9 @@ function GameBoard({ gameState, cards, onClick }) {
   shuffle(cards)
 
   return (
-    <>
-      {cards.map(card => <div onClick={gameState === 'playing' && (() => onClick(card))}>{card.productName}</div>)}
-    </>
+    <div class='game-board'>
+      {cards.map(card => <Card gameState={gameState} card={card} onClick={onClick}/>)}
+    </div>
   )
 }
 

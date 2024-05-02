@@ -1,0 +1,10 @@
+.game-board {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  padding-top: calc(96px + 2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 1rem;
+}
