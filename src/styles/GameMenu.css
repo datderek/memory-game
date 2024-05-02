@@ -1,0 +1,35 @@
+.game-menu {
+  height: 100vh;
+  color: var(--white-smoke);
+  background-color: var(--eerie-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-menu > h1 {
+  font-size: 3rem;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 150px;
+}
+
+.button-wrapper > button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1.25rem;
+}
+
+.button-wrapper > button:hover {
+  background-color: var(--silver);
+}

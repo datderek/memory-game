@@ -1,0 +1,12 @@
+.scoreboard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-smoke);
+  background-color: var(--eerie-black);
+}

@@ -1,6 +1,7 @@
 import GameHeader from './components/GameHeader';
 import GameBoard from './components/GameBoard';
 import GameMenu from './components/GameMenu';
+import './App.css';
 import { useState, useEffect } from 'react';
 
 const url = 'https://sephora.p.rapidapi.com/us/products/v2/list?categoryId=cat140006&pageSize=15&currentPage=1&sortBy=P_BEST_SELLING%3A1';
@@ -83,10 +84,10 @@ function App() {
     return <GameMenu onClick={handleMenuClick}/>
   } else {
     return (
-      <>
+      <div className='game'>
         <GameHeader gameState={gameState} currentScore={clickedCards.length} highScore={highScore}/>
         <GameBoard gameState={gameState} cards={cardBank} onClick={handleCardClick} />
-      </>
+      </div>
     )
   }
 }

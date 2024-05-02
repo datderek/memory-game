@@ -1,0 +1,9 @@
+.game {
+  height: 100vh;
+  background: repeating-linear-gradient(
+  var(--white-smoke),
+  var(--white-smoke) 60px,
+  var(--eerie-black) 60px,
+  var(--eerie-black) 120px
+);
+}
